@@ -1,0 +1,23 @@
+PODS:
+  - QRCodeReader.swift (8.0.3)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - QRCodeReader.swift
+  - RealmSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  QRCodeReader.swift: 7c98a05c2544a7c8737853845428b4460273d50d
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: e4418ea309bf14b83cb8c05440291e26e34e3120
+
+COCOAPODS: 1.2.1

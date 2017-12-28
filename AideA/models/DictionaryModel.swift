@@ -1,7 +1,7 @@
 import Foundation
 import RealmSwift
 
-class WordModel: Object
+class DictionaryModel: Object
 {
     @objc dynamic var word = ""
     @objc dynamic var meaning = ""

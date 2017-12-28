@@ -1,8 +1,8 @@
 import Foundation
 import RealmSwift
 
-class ThemeModel: Object {
-  dynamic var word = ""
-  dynamic var meaning = ""
+class ThemeModel: Object
+{
+    @objc dynamic var word = ""
+    @objc dynamic var meaning = ""
 }
-

@@ -8,9 +8,25 @@
 
 import Foundation
 
-class OperationAlphabets
+public class OperationAlphabets: NSObject
 {
-    let alphabets = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "o", "p", "q", "r", "s", "t", "u", "v", "w", "z"]
+    private let alphabets = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "o", "p", "q", "r", "s", "t", "u", "v", "w", "z"]
+    var carryingAlphabets: [String] = []
+    
+    override init()
+    {
+        guard let data = UserSettings.carryLists.object() as? Data else
+        {
+            print("Could not convert Data : carryLists")
+            return
+        }
+        guard let list = NSKeyedUnarchiver.unarchiveObject(with: data) as? [String] else
+        {
+            print("Could not unarchive Array : carryLists")
+            return
+        }
+        self.carryingAlphabets = list
+    }
     
     func returnWithWildcardAlphabets() -> [String]
     {
@@ -24,5 +40,14 @@ class OperationAlphabets
         let index = Int(arc4random_uniform(UInt32(length)))
         let selectAlphabet = self.alphabets[index]
         return selectAlphabet
+    }
+    
+    func notFoundAlphabet(word: String) -> Bool
+    {
+        if let _ = self.carryingAlphabets.index(of: word)
+        {
+            return false
+        }
+        return true
     }
 }

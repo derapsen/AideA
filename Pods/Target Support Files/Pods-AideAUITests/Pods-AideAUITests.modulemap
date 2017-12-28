@@ -1,0 +1,6 @@
+framework module Pods_AideAUITests {
+  umbrella header "Pods-AideAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
