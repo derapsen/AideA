@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Makinas-Scrap-5.otf">
+            <string>Makinas-Scrap-5</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WordCell" customModule="AideA_support" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listArea" translatesAutoresizingMaskIntoConstraints="NO" id="ovW-W2-0Sg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="94w-2U-7Yd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKu-Fa-mmc">
+                        <rect key="frame" x="18" y="7" width="284" height="35.5"/>
+                        <fontDescription key="fontDescription" name="Makinas-Scrap-5" family="Makinas" pointSize="30"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DKu-Fa-mmc" secondAttribute="bottom" constant="7" id="Cfj-Lw-tz8"/>
+                    <constraint firstItem="ovW-W2-0Sg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CuH-au-18f"/>
+                    <constraint firstItem="DKu-Fa-mmc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="InA-XE-mWA"/>
+                    <constraint firstItem="DKu-Fa-mmc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Mbx-RM-NQm"/>
+                    <constraint firstAttribute="trailing" secondItem="ovW-W2-0Sg" secondAttribute="trailing" id="QMX-ie-a3Y"/>
+                    <constraint firstAttribute="trailing" secondItem="DKu-Fa-mmc" secondAttribute="trailing" constant="18" id="YcZ-ac-2pi"/>
+                    <constraint firstAttribute="bottom" secondItem="ovW-W2-0Sg" secondAttribute="bottom" id="fgV-nw-TwZ"/>
+                    <constraint firstItem="ovW-W2-0Sg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pn6-e9-oRf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblWord" destination="DKu-Fa-mmc" id="r7p-Rg-RSq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="listArea" width="320" height="110"/>
+    </resources>
+</document>
